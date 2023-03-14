@@ -8,7 +8,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Body = () => {
   return (
     <div className='body-container'>
-       <video src="/videos/pot.mp4" autoPlay loop muted />
+       <video src="/videos/pot2.mp4" autoPlay loop muted />
        <h1>Welcome to Home </h1>
        <p>your go-to source for delicious and easy-to-follow recipes!"</p>
        <div className="body-btns">
