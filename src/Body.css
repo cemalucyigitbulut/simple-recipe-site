@@ -1,0 +1,110 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  z-index: -1;
+}
+
+.body-container {
+  /* background: url('') center center/cover no-repeat; */
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+  object-fit: contain;
+}
+
+.body-container > h1 {
+  color: #fff;
+  font-size: 80px;
+  margin-top: -100px;
+}
+
+.body-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.body-btns {
+  margin-top: 32px;
+}
+
+/* .btn Button.jsx deki btn */
+.body-btns .btn {
+  margin: 6px;
+}
+
+.GrPlayFill {
+  margin-left: 2px;
+}
+
+.body-container input {
+  box-shadow: inset black 0 0 0 2px;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+  appearance: none;
+  width: 60vh;
+  position: relative;
+  border-radius: 3px;
+  padding: 9px 12px;
+  line-height: 1.4;
+  color: #09bef0;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  transition: all 0.2s ease;
+}
+.body-container input:hover {
+  box-shadow: 0 0 0 0 #fff inset, #09bef0 0 0 0 2px;
+}
+.body-container input:focus {
+  background: black;
+  outline: 0;
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 960px) {
+  .body-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body-container > h1 {
+    font-size: 50px;
+    margin-top: -50px;
+    margin-left: 10px;
+  }
+
+  .body-container input{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .body-container > p {
+    font-size: 25px;
+    margin-left: 18px;
+  }
+
+  /* .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  } */
+}
