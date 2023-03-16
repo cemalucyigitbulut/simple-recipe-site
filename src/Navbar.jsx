@@ -49,26 +49,26 @@ const Navbar = () => {
             <ul className={click ? "nav-menu active" : "nav-menu"}>
 
               <li className="nav-item">
-                <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
-                1
+                <NavLink to="/first" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
+                Recipes
                 </NavLink>
               </li>
 
               <li className="nav-item">
                 <NavLink to="/about" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
-                2
+                Special Diets 
                 </NavLink>
               </li>
 
               <li className="nav-item">
                 <NavLink to="/contact" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
-                3
+                Drinks
                 </NavLink>
               </li>
 
               <li className="nav-item">
                 <NavLink to="/sign-up" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
-                4
+                Baking & Desserts
                 </NavLink>
               </li>
             </ul>

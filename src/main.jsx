@@ -11,6 +11,7 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import './Home.css'
 import First from "./First";
+import Footer from "./Footer";
 
 
 const AppLayout = () => {
@@ -18,7 +19,7 @@ const AppLayout = () => {
     <>
       <Navbar/>
       <Outlet />
-      {/* <Footer/> */}
+      <Footer/> 
     </>
   );
 };
