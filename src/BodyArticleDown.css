@@ -9,5 +9,49 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  
+  overflow-x: auto;
 }
+
+.BodyArticleDown a{
+  color:#09bef0;
+  text-decoration: none;
+}
+
+.BodyArticleDown a:hover{
+  text-decoration:underline;
+}
+
+ /* bottom scrollbar */
+
+.BodyArticleDown::-webkit-scrollbar {
+  height: 12px;
+}
+
+.BodyArticleDown::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.BodyArticleDown::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.BodyArticleDown::-webkit-scrollbar-thumb:hover {
+  background-color: #09bef0;
+}
+
+.BodyArticleDown::-webkit-scrollbar-thumb:active {
+  background-color: #09bef0;
+}
+
+.BodyArticles-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%; 
+  margin-right: 40px; 
+  flex-shrink: 0;
+}
+
+
+
