@@ -12,6 +12,12 @@
     align-items: center;
 }
 
+.body-button{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .BodyDown p{
   font-size: 25px;
 }

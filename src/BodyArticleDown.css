@@ -1,0 +1,13 @@
+.BodyArticleDown{
+  background-color: rgb(49, 46, 46);
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
