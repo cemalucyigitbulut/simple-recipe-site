@@ -1,0 +1,22 @@
+.article-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(49, 46, 46);
+    color: white;
+    gap: 18px;
+  }
+
+
+  .buttoncuk{
+    padding: 15px;
+  }
+
+  @media screen and (max-width: 768px){
+    .article-container{
+      gap: 0px;
+    }
+
+
+  }

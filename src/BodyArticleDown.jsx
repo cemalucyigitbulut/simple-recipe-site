@@ -7,7 +7,7 @@ import Button from './Button'
 const BodyArticleDown = () => {
   return (
     
-    <>
+    <div className='zoomout'>
     <div className='BodyArticleDown'>
       <div className="BodyArticles-wrapper">
       <BodyArticles src="images/Spice.png" text="If you're passionate about kitchen organization, you need the YouCopia SpiceStack." title="This Is the Best Spice Rack for Small Spaces" path="/"/>
@@ -17,11 +17,8 @@ const BodyArticleDown = () => {
       <BodyArticles src="images/Brands.png" text="Whether you like your clusters nutty, grain-free, or not too sweet, we've got a granola pick for you." title="The 10 Best Granola Brands, According to Bon Appétit Editors" path="/"/>
       <BodyArticles src="images/Juicer.png" text="Never pay $9 for a green juice again , pay $15 dolar for better replacement or more ?." title="The Best Juicer Is Quiet, Powerful, and Will Outlive Any Fad Diet" path="/"/>
       </div>
-    
-       <Link to="/first"><Button buttonStyle="btn--primary" buttonSize="btn--large">More Articles</Button></Link>
-    
     </div>
-    </>
+    </div>
 
   )
 }

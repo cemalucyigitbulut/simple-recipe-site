@@ -12,6 +12,7 @@
     width: auto;
     max-height:310px;
     display: block;
+    margin-bottom: 5px;
   }
 
   .article-title{
@@ -19,4 +20,11 @@
     justify-content: center;
     align-items: center; */
     font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  @media screen and (max-width: 768px){
+    .article-box img{
+      width: 115%;
+    }
   }
