@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const BodyDown = () => {
   return (
     <div className="BodyDown">
+      
       <h1>What to Cook Tonight</h1>
       <p>Fast, fresh, and foolproof</p>
       {/* <div className="animate__animated animate__lightSpeedInLeft"> */}
@@ -97,6 +98,7 @@ const BodyDown = () => {
           </div>
       </div>
     </div>
+    
     // </div>
   );
 };

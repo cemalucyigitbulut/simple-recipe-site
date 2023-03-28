@@ -4,7 +4,7 @@ import BodyDown from './BodyDown'
 import BodyArticleDown from './BodyArticleDown'
 import { Link } from 'react-router-dom'
 import Article from './Article'
-import LearnHow from './LearnHow'
+import NewsTeller from './NewsTeller'
 
 
 const Home = () => {
@@ -12,9 +12,9 @@ const Home = () => {
     <div>
       
       <Body/>
-      <LearnHow/>
       <BodyDown/>
       <Article/>
+      <NewsTeller/>
     
     </div>
   )

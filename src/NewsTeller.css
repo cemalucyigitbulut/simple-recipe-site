@@ -1,0 +1,58 @@
+.something {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 25px;
+}
+
+.contents h1 {
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.contents h3 {
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.parag {
+  max-width: 550px;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.inputt {
+  height: 48px;
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 4px;
+  background: transparent;
+  outline: none;
+  padding: 12px 16px;
+  border: 1px solid #a0a0a0;
+  color: #09bef0;
+  width: 100%;
+  display: block;
+  line-height: 1.5em;
+  opacity: 1;
+  transition: all 0.2s ease;
+  box-shadow: inset black 0 0 0 2px;
+}
+
+.inputt:hover {
+  box-shadow: 0 0 0 0 #fff inset, #09bef0 0 0 0 2px;
+}
+.inputt:focus {
+  background: black;
+  outline: 0;
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+}
+
+.buttonn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}

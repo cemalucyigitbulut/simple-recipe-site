@@ -25,8 +25,9 @@
   .card-title{
     display: flex;
     justify-content: center;
-    color: #09bef0;
+    color: white;
     font-size: 22px;
+    font-weight: 600;
   }
   .card__content {
     margin: 1rem 0;
