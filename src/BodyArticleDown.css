@@ -13,8 +13,8 @@
 /* -------------------------- */
 
 .BodyArticleDown {
-  background-color: rgb(49, 46, 46);
-  color: white;
+  background-color: #f1f1ea;
+  color: rgb(49, 46, 46);
   height: 520px;
   width: 100%;
   padding: 20px;
@@ -27,7 +27,7 @@
 }
 
 .BodyArticleDown a {
-  color: #09bef0;
+  color: rgb(49, 46, 46);
   text-decoration: none;
   font-weight: 600;
 }
@@ -43,21 +43,21 @@
 }
 
 .BodyArticleDown::-webkit-scrollbar-track {
-  background-color: rgb(49, 46, 46);
+  background-color: grey;
 }
 
 .BodyArticleDown::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(49, 46, 46);
   border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .BodyArticleDown::-webkit-scrollbar-thumb:hover {
-  background-color: #09bef0;
+  background-color: rgb(49, 46, 46);
 }
 
 .BodyArticleDown::-webkit-scrollbar-thumb:active {
-  background-color: #09bef0;
+  background-color: #286c1c;
 }
 
 .BodyArticles-wrapper {
@@ -68,6 +68,8 @@
   flex-shrink: 0;
   font-size: 18px;
 }
+
+
 
 
 

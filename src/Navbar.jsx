@@ -42,7 +42,7 @@ const Navbar = () => {
             
             Home
 
-            <GiCookingPot className="navbar-icon" onClick={closeMobileMenu} /> 
+            {/* <GiCookingPot className="navbar-icon" onClick={closeMobileMenu} />  */}
             
             </Link>
             <div className="menu-icon" onClick={handleClick}> {click ? <FaTimes /> : <FaBars />}</div>

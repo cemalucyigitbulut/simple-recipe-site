@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(49, 46, 46);
-    color: white;
+    background-color:#f1f1ea;
+    color: black;
     gap: 18px;
+    padding: 20px;
   }
 
 

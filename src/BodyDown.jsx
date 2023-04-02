@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const BodyDown = () => {
   return (
     <div className="BodyDown">
-      
       <h1>What to Cook Tonight</h1>
       <p>Fast, fresh, and foolproof</p>
       {/* <div className="animate__animated animate__lightSpeedInLeft"> */}
@@ -91,14 +90,38 @@ const BodyDown = () => {
           title="Ricotta Lasagna"
           path="/"
         />
+
+        <CardInside
+          src="images/Buffalo.jpg"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt."
+          title="Buffalo Wings"
+          path="/"
+        />
+
+        <CardInside
+          src="images/Stew.jpg"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt."
+          title="Coconutty Stew"
+          path="/"
+        />
       </div>
       <div className="body-button">
-          <div className="animate__animated animate__lightSpeedInLeft">
-            <Link to="/first"><Button className="btns-2" buttonStyle="btn--primary" buttonSize="btn--large">More Recipes</Button></Link>
-          </div>
+        <div className="animate__animated animate__lightSpeedInLeft">
+          <Link to="/first">
+            <Button
+              className="btns-2"
+              buttonStyle="btn--green"
+              buttonSize="btn--large"
+            >
+              More Recipes
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
-    
+
     // </div>
   );
 };

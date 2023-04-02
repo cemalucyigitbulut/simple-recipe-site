@@ -24,6 +24,22 @@
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
   }
+
+  .btn--black {
+    background-color: transparent;
+    color: black;
+    padding: 8px 20px;
+    border: 1px solid var(--black);
+    transition: all 0.3s ease-out;
+  }
+
+  .btn--green{
+    background-color: #286c1c;
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid var(--black);
+    transition: all 0.3s ease-out;
+  }
   
   .btn--medium {
     padding: 8px 20px;
@@ -52,5 +68,17 @@
   .btn--primary:hover{
     background: transparent;
     color:black;
+    transition: all 0.3s ease-out;
+  }
+
+  .btn--black:hover {
+    background: black;
+    color:white;
+    transition: all 0.3s ease-out;
+  }
+
+  .btn--green:hover{
+    background: rgb(3, 173, 3);
+    color:white;
     transition: all 0.3s ease-out;
   }
