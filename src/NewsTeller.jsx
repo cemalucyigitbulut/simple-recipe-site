@@ -27,7 +27,7 @@ const NewsTeller = () => {
          <div className="buttonn">
           <Button
             className="btns"
-            buttonStyle="btn--black"
+            buttonStyle="btn--green"
             buttonSize="btn--large"
           >
             Subscribe

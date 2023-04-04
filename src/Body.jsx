@@ -20,11 +20,11 @@ const Body = () => {
               buttonStyle="btn--outline"
               buttonSize="btn--large"
             >
-              Click On Me
+              Search
             </Button>
           </Link>
           {/* <Button className='btns' buttonStyle="btn--primary" buttonSize="btn--large">I Beg Of You <GrPlayFill className="GrPlayFill"/> </Button> */}
-          <Link to="/">
+          {/* <Link to="/">
             <Button
               className="btns-2"
               buttonStyle="btn--primary"
@@ -32,7 +32,7 @@ const Body = () => {
             >
               Click On Me
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

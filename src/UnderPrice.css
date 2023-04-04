@@ -1,0 +1,79 @@
+.full-body-first {
+  background-color: #f1f1ea;
+}
+
+/* bootstrap container a benzetme*/
+.full-body-second {
+  background-color: #f1f1ea;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 5px;
+}
+/* ------------------ */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:20px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom:25px;
+  gap: 15px;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.line {
+  height: 1px;
+  /* background-color: var(--green); */
+  border-top: 3px solid var(--green);
+  flex-grow: 1;
+  margin-left: 20px; /* adjust the margin as needed */
+  display: inline-block;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+}
+
+.card-content a {
+  font-weight: 2px;
+  text-decoration: none;
+  color: var(--green);
+  /* text-align: center; */
+}
+
+.card-content a:hover{
+    color:var(--green-light)
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-money {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--grey);
+}

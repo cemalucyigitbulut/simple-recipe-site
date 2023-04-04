@@ -5,4 +5,11 @@
     font-family: 'Zen Kaku Gothic New', sans-serif;
   }
 
+  :root {
+    --primary: white;
+    --black: black;
+    --green:#286c1c;
+    --green-light:rgb(3, 173, 3);
+    --grey:rgb(97, 96, 96);
+  }
   

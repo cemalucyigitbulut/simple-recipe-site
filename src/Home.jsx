@@ -5,6 +5,7 @@ import BodyArticleDown from './BodyArticleDown'
 import { Link } from 'react-router-dom'
 import Article from './Article'
 import NewsTeller from './NewsTeller'
+import UnderPrice from './UnderPrice'
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <div>
       
       <Body/>
+      <UnderPrice/>
       <BodyDown/>
       <Article/>
       <NewsTeller/>

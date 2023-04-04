@@ -10,7 +10,7 @@ const Article = () => {
       <h1>Articles From Us</h1>
       <p>All the stuff you need—and some you don't</p>
        <BodyArticleDown/>
-       <div className="buttoncuk"><Link to="/first"><Button buttonStyle="btn--black" buttonSize="btn--large">More Articles</Button></Link></div>
+       <div className="buttoncuk"><Link to="/first"><Button buttonStyle="btn--green" buttonSize="btn--large">More Articles</Button></Link></div>
       
     </div>
   )
