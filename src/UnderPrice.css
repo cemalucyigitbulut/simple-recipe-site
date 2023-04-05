@@ -2,6 +2,11 @@
   background-color: #f1f1ea;
 }
 
+.hiden{
+  opacity: var(--hidden-opacity);
+}
+
+
 /* bootstrap container a benzetme*/
 .full-body-second {
   background-color: #f1f1ea;

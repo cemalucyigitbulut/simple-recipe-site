@@ -2,7 +2,7 @@ import React from "react";
 import "./UnderPrice.css";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 const CardData = (props) => {
   const serving1 =
@@ -19,7 +19,7 @@ const CardData = (props) => {
             <Link to={props.path}>{props.cont}</Link>
           </h3>
           <div className="card-money">
-            {serving1.toFixed(0)}
+            {serving1.toFixed(2)}
             {props.currency} RECIPE / {serving2.toFixed(2)}
             {props.currency} SERVING
           </div>
@@ -30,6 +30,7 @@ const CardData = (props) => {
 };
 
 const UnderPrice = () => {
+  // $->TL
   const [currency, setCurrency] = useState("$");
   const [titlechange, setTitleChange] = useState("10");
   const [titlechange2, setTitleChange2] = useState("Under");
@@ -40,6 +41,27 @@ const UnderPrice = () => {
     setTitleChange2(currency === "TL" ? "Under" : "Above");
   };
 
+  // Animasyon Göründümü
+
+  const [isAnimated, setIsAnimated] = useState(false);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((girisler) => {
+      const giris = girisler[0];
+      if (giris.isIntersecting) {
+        setIsAnimated(true);
+      }
+    }, {
+      threshold: 0.9 // tam gözükmeden çalışmaz / 0.5 yarısı gözüksede çalışır
+    });
+    observer.observe(cardRef.current);
+  }, []);
+
+  
+
+
+
   return (
     <div className="full-body-first">
       <div className="full-body-second">
@@ -49,66 +71,71 @@ const UnderPrice = () => {
           </h1>
           <div className="line"></div>
         </div>
-        <div className="cards">
-          <div className="animate__animated animate__backInLeft">
-            <CardData
-              src="images/Frittata.jpg"
-              cont="HOW TO MAKE A FRITTATA"
-              serving1={5.11}
-              serving2={0.85}
-              currency={currency}
-            />
-          </div>
-          <div className="animate__animated animate__backInDown">
-            <CardData
-              src="images/Quesadillas.png"
-              cont="SPINACH QUESADILLAS"
-              serving1={3.99}
-              serving2={1}
-              currency={currency}
-            />
-          </div>
 
-          <div className="animate__animated animate__backInUp">
-            <CardData
-              src="images/Vegan-Creamy.png"
-              cont="VEGAN CREAMY RAMEN"
-              serving1={5.9}
-              serving2={2.75}
-              currency={currency}
-            />
+          <div className="cards">
+            <div ref={cardRef} className={`animate__animated ${isAnimated ? "animate__backInLeft" : "hiden"}`}>
+              <CardData
+                src="images/Frittata.jpg"
+                cont="HOW TO MAKE A FRITTATA"
+                serving1={5.11}
+                serving2={0.85}
+                currency={currency}
+              />
+            </div>
+            <div ref={cardRef} className={`animate__animated ${isAnimated ? "animate__backInDown" : "hiden"}`}>
+              <CardData
+                src="images/Quesadillas.png"
+                cont="SPINACH QUESADILLAS"
+                serving1={3.99}
+                serving2={1}
+                currency={currency}
+              />
+            </div>
+
+            <div ref={cardRef} className={`animate__animated ${isAnimated ? "animate__backInUp" : "hiden"}`}>
+              <CardData
+                src="images/Vegan-Creamy.png"
+                cont="VEGAN CREAMY RAMEN"
+                serving1={5.9}
+                serving2={2.75}
+                currency={currency}
+              />
+            </div>
+
+            <div ref={cardRef} className={`animate__animated ${isAnimated ? "animate__backInRight" : "hiden"}`}>
+              <CardData
+                src="images/Veg Curry.png"
+                cont="15-MIN VEGETABLE CURRY"
+                serving1={5.93}
+                serving2={1.48}
+                currency={currency}
+              />
+            </div>
           </div>
+        
+      </div>
 
-          <div className="animate__animated animate__backInRight">
-            <CardData
-              src="images/Veg Curry.png"
-              cont="15-MIN VEGETABLE CURRY"
-              serving1={5.93}
-              serving2={1.48}
-              currency={currency}
-            />
-          </div>
-        </div>
-
-        <div className="button">
-          <Link to="/">
-            <Button
-              className="btns"
-              buttonStyle="btn--green"
-              buttonSize="btn--large"
-            >
-              More Budget Recipes
-            </Button>
-          </Link>
-
+      <div className={`animate__animated ${isAnimated ? "animate__lightSpeedInLeft" : "hiden"}`}>
+      <div className="button">
+      
+        <Link to="/">
           <Button
             className="btns"
             buttonStyle="btn--green"
             buttonSize="btn--large"
-            onClick={handleCurrencyChange}
           >
-            {currency === "$" ? "Change to TL" : "Change to $"}
+            More Budget Recipes
           </Button>
+        </Link>
+
+        <Button
+          className="btns"
+          buttonStyle="btn--green"
+          buttonSize="btn--large"
+          onClick={handleCurrencyChange}
+        >
+          {currency === "$" ? "Change to TL" : "Change to $"}
+        </Button>
         </div>
       </div>
     </div>
