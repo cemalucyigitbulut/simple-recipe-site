@@ -1,0 +1,208 @@
+.test-main-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-main {
+  background-color: white;
+}
+.test-title {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.button-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.btns {
+  font-size: 20px;
+  padding: 12px 26px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  background-color: #286c1c;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid var(--black);
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+}
+
+.btns:hover {
+  background: rgb(3, 173, 3);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btns.active {
+  background-color: var(--grey);
+  transition: all 0.3s ease-in-out;
+}
+
+.btns.active:hover {
+  background-color: var(--green-light);
+}
+
+.boot-test {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.test-card-container {
+  display: flex;
+  gap: 30px;
+}
+
+.second-part {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonial {
+  background-color: rgba(241, 241, 234, 0.5);
+  height: 320px;
+  width: 350px;
+  border-radius: 5%;
+  border: 2px solid var(--green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5.5rem;
+}
+
+.testimonial a {
+  text-decoration: none;
+  color: gray;
+  transition: ease-in-out 400ms;
+}
+
+.testimonial a:hover {
+  color: var(--green-light);
+  transition: ease-in-out 400ms;
+}
+
+.test-image {
+  border-radius: 50%;
+  margin-top: 1rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.test-info {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.test-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: ease-in-out 400ms;
+}
+.test-name:hover {
+  color: var(--green-light);
+  transition: ease-in-out 400ms;
+}
+
+.test-twitter {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.test-content {
+  font-size: 1.02rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /* adjust the layout for smaller screens */
+
+  .second-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .test-main {
+    padding: 10px;
+  }
+
+  .test-title h1 {
+    font-size: 24px;
+  }
+
+  .test-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .test-info {
+    margin-bottom: 10px;
+  }
+
+  .button-cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btns {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* adjust the layout for even smaller screens */
+
+  .second-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .test-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .test-info {
+    font-size: 14px;
+  }
+
+  .test-name {
+    font-size: 18px;
+  }
+
+  .test-twitter {
+    font-size: 12px;
+  }
+
+  .test-content {
+    font-size: 16px;
+  }
+
+  .button-cont {
+    flex-direction: column;
+  }
+
+  .btns {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

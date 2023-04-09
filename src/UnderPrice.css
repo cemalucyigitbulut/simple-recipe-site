@@ -83,3 +83,15 @@
   font-weight: bold;
   color: var(--grey);
 }
+
+@media screen and (max-width: 768px) {
+  .full-body-second {
+    padding: 0 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
