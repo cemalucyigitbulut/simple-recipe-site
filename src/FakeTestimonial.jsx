@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Testimonial = (props) => {
   return (
-    <div className="testimonial">
+    <div className={`testimonial ${props.className}`}>
       <img className="test-image" src={props.src} alt="no-img-test" />
       <div className="test-info">
         <div className="test-name">{props.name}</div>
@@ -50,6 +50,7 @@ const FakeTestimonial = () => {
                 twit="@Alex_Hipp"
                 content="I've been using Home Cook for weeks now and it's become my go-to website for meal planning. The recipes are delicious and easy to follow."
                 path="/"
+                className={`animate__animated ${showFirstPart ? "animate__fadeIn" : ""}`}
               />
 
               <Testimonial
@@ -58,6 +59,7 @@ const FakeTestimonial = () => {
                 twit="@Craig_Mckay"
                 content="As someone who's always on the hunt for new recipes, Home Cook has been a game-changer. I love the variety of dishes available and the helpful tips for each recipe."
                 path="/"
+                className={`animate__animated ${showFirstPart ? "animate__fadeIn" : ""}`}
               />
 
               <Testimonial
@@ -66,6 +68,7 @@ const FakeTestimonial = () => {
                 twit="@Alexander_Suprun"
                 content="I'm not the best cook, but Home Cook has made it easy for me to step up my game in the kitchen. The recipes are simple and the photos make it easy to see what I'm aiming for."
                 path="/"
+                className={`animate__animated ${showFirstPart ? "animate__fadeIn" : ""}`}
               />
 
               <Testimonial
@@ -74,6 +77,7 @@ const FakeTestimonial = () => {
                 twit="@Stefan_Stefancik"
                 content="Home Cook is my new secret weapon for impressing dinner guests. The recipes are restaurant-quality, but easy enough for me to make at home."
                 path="/"
+                className={`animate__animated ${showFirstPart ? "animate__fadeIn" : ""}`}
               />
             </>
           )}
@@ -87,6 +91,7 @@ const FakeTestimonial = () => {
                   twit="@Oguz_Yağız"
                   content="I love how Home Cook lets me search for recipes based on the ingredients I already have. It's a great way to use up leftovers and avoid waste."
                   path="/"
+                  className={`animate__animated ${showSecondPart ? "animate__fadeIn" : ""}`}
                 />
 
                 <Testimonial
@@ -95,6 +100,7 @@ const FakeTestimonial = () => {
                   twit="@Courtney_Cook"
                   content="As a busy mom, Home Cook has made meal planning so much easier for me. I can quickly find recipes that my family will love and that fit into my schedule."
                   path="/"
+                  className={`animate__animated ${showSecondPart ? "animate__fadeIn" : ""}`}
                 />
 
                 <Testimonial
@@ -103,6 +109,7 @@ const FakeTestimonial = () => {
                   twit="@Dahiana_Waszaj"
                   content="I've tried so many recipe websites over the years, but Home Cook is by far my favorite. The recipes are always delicious and the website is so user-friendly."
                   path="/"
+                  className={`animate__animated ${showSecondPart ? "animate__fadeIn" : ""}`}
                 />
 
                 <Testimonial
@@ -111,6 +118,7 @@ const FakeTestimonial = () => {
                   twit="@Charles_Deluvio"
                   content="Home Cook has inspired me to try new things in the kitchen. I love the variety of international recipes and the helpful cooking tips that come with each one."
                   path="/"
+                  className={`animate__animated ${showSecondPart ? "animate__fadeIn" : ""}`}
                 />
               </div>
             </>
