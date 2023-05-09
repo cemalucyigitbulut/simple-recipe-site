@@ -1,5 +1,5 @@
 import React from "react";
-import "./Body.css";
+import "../Css/Body.css";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { AiOutlineSearch } from "react-icons/ai";

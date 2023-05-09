@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Body from './Body'
-import BodyDown from './BodyDown'
-import BodyArticleDown from './BodyArticleDown'
+import Body from './Components/Body'
+import BodyDown from './Components/BodyDown'
 import { Link } from 'react-router-dom'
-import Article from './Article'
-import NewsTeller from './NewsTeller'
-import UnderPrice from './UnderPrice'
-import FakeTestimonial from './FakeTestimonial'
+import Article from './Components/Article'
+import NewsTeller from './Components/NewsTeller'
+import UnderPrice from './Components/UnderPrice'
+import FakeTestimonial from './Components/FakeTestimonial'
+
 
 
 const Home = () => {

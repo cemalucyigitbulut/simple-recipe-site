@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { React ,useState, useEffect } from "react";
-import "./Navbar.css";
+import "../Css/Navbar.css";
 import { GiCookingPot } from "react-icons/gi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";

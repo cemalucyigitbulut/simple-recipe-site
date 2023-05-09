@@ -8,10 +8,10 @@ import {
   Outlet,
 } from "react-router-dom";
 import Home from "./Home";
-import Navbar from "./Navbar";
-import './Home.css'
-import First from "./First";
-import Footer from "./Footer";
+import Navbar from "./Components/Navbar";
+import "./Css/Home.css";
+import First from "./Components/First";
+import Footer from "./Components/Footer";
 
 
 const AppLayout = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./NewsTeller.css";
+import "../Css/NewsTeller.css";
 import Button from "./Button";
 
 const NewsTeller = () => {

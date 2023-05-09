@@ -1,5 +1,5 @@
 import React from "react";
-import "./UnderPrice.css";
+import "../Css/UnderPrice.css";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { useRef, useEffect, useState } from "react";

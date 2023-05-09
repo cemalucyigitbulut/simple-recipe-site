@@ -1,5 +1,5 @@
 import React from "react";
-import './BodyArticle.css'
+import '../Css/BodyArticle.css'
 import { Link } from 'react-router-dom'
 
 

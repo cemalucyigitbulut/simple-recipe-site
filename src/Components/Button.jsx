@@ -1,4 +1,4 @@
-import "./Button.css";
+import "../Css/Button.css";
 import { Link } from "react-router-dom";
 
 const STYLES = ["btn--primary", "btn--outline" ,"btn--black" ,"btn--green"];

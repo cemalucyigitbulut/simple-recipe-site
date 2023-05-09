@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./FakeTestimonial.css";
-import Button from "./Button";
+import "../Css/FakeTestimonial.css";
 
 const Testimonial = (props) => {
   return (

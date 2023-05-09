@@ -1,7 +1,7 @@
 import React from 'react'
 import BodyArticles from './BodyArticles'
 import { Link } from 'react-router-dom'
-import "./BodyArticleDown.css"
+import "../Css/BodyArticleDown.css"
 import Button from './Button'
 import { useRef } from 'react'
 import { AiOutlineArrowLeft } from "react-icons/ai";

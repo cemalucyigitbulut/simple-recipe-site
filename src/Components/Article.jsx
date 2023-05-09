@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./Article.css"
+import "../Css/Article.css"
 import Button from './Button'
 import BodyArticleDown from './BodyArticleDown'
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./BodyDown.css";
+import "../Css/BodyDown.css";
 import CardInside from "./CardInside";
 import "animate.css";
 import Button from "./Button";
