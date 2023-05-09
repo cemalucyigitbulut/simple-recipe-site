@@ -49,25 +49,25 @@ const Navbar = () => {
             <ul className={click ? "nav-menu active" : "nav-menu"}>
 
               <li className="nav-item">
-                <NavLink to="/first" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
-                Recipes
+                <NavLink to="/weekly" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
+                Weekly Menu
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/about" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
+                <NavLink to="/recipes" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
+                Recipes 
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink to="/diets" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
                 Special Diets 
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/contact" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
-                Drinks
-                </NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink to="/sign-up" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
+                <NavLink to="/desserts" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}>
                 Baking & Desserts
                 </NavLink>
               </li>

@@ -1,9 +1,10 @@
 import React from 'react'
+import Weeklyy from './Components/WeeklyT'
 
 const First = () => {
   return (
     <div>
-      Helo
+      <Weeklyy/>
     </div>
   )
 }

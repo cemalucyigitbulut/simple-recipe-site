@@ -10,7 +10,7 @@ import {
 import Home from "./Home";
 import Navbar from "./Components/Navbar";
 import "./Css/Home.css";
-import First from "./Components/First";
+import Weekly from "./WeeklyMenu";
 import Footer from "./Components/Footer";
 
 
@@ -36,8 +36,8 @@ const router = createBrowserRouter([
       },
     
       {
-        path: "/first",
-        element: <First/>
+        path: "/weekly",
+        element: <Weekly/>
       },
     ]
   },
